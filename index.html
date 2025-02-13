@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Palabras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Juego de Palabras</h1>
+        <p>Letra aleatoria: <span id="random-letter"></span></p>
+        <p>Turno de: <span id="current-player">Jugador 1</span></p>
+        <p>Tiempo restante: <span id="timer">60</span> segundos</p>
+        <input type="text" id="word-input" placeholder="Ingresa una palabra">
+        <button onclick="submitWord()">Enviar Palabra</button>
+        <button onclick="nextTurn()">Finalizar Turno</button>
+        <ul id="word-list"></ul>
+        <h2 id="winner"></h2>
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>

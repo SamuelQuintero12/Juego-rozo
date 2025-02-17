@@ -1,0 +1,72 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: white;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    width: 106%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#wordList {
+    list-style: none;
+    padding: 0;
+}
+
+#wordList li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    #winnerDisplay {
+        font-size: 28px;
+    }
+
+    #otherPlayers {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
